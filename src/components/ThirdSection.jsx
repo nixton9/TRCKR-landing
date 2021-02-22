@@ -8,14 +8,14 @@ import PropTypes from 'prop-types'
 const ThirdSectionContainer = styled.section`
   width: 90%;
   position: relative;
-  margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
+  margin: ${({ theme }) => theme.spacingXXXL} auto 0 auto;
 
   .sectionTitle {
     text-align: center;
   }
 
   .modules-grid {
-    margin-top: ${({ theme }) => theme.spacingL};
+    margin-top: ${({ theme }) => theme.spacingXL};
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

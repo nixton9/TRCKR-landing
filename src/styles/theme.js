@@ -5,6 +5,7 @@ export const theme = {
   spacingL: '9rem',
   spacingXL: '12rem',
   spacingXXL: '18rem',
+  spacingXXXL: '24rem',
   fontFamily: '"Poppins", sans-serif',
   fontLight: 300,
   fontRegular: 400,

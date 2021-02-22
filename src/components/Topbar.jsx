@@ -10,7 +10,6 @@ export const TopbarContainer = styled.nav`
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 95%;
   padding: ${({ theme }) => theme.spacingS};
   display: flex;
   align-items: center;

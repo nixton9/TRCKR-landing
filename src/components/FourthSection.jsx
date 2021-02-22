@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 const FourthSectionContainer = styled.section`
   width: 90%;
   position: relative;
-  margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
+  margin: 36rem auto 0 auto;
   text-align: center;
 
   img {
