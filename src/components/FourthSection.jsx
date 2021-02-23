@@ -12,7 +12,6 @@ const FourthSectionContainer = styled.section`
   text-align: center;
 
   img {
-    width: 115rem;
     max-width: 100%;
     margin-top: ${({ theme }) => theme.spacingXL};
   }
@@ -24,7 +23,7 @@ const FourthSection = ({ theme }) => (
       A website that feels like an <span className="accent-color">app</span>
     </SectionTitle>
 
-    <SectionText>
+    <SectionText limitWidth>
       TRCKR is the ultimate app for you to track everything in your life. Lorem
       ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua.

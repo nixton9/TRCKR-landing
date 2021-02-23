@@ -25,9 +25,8 @@ const ThirdSectionContainer = styled.section`
 
   img {
     position: absolute;
-    width: 45rem;
-    right: -20rem;
-    bottom: -23rem;
+    right: -22vw;
+    bottom: -40rem;
   }
 `
 

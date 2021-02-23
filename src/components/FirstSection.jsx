@@ -27,10 +27,6 @@ const FirstSectionContainer = styled.section`
       margin-top: ${({ theme }) => theme.spacingM};
     }
   }
-
-  img {
-    max-width: 100%;
-  }
 `
 
 const FirstSection = ({ theme }) => (
