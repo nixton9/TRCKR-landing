@@ -19,8 +19,12 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 60.5%;
         }
 
-        @media ${device.tablet} {
+        @media ${device.laptopXS} {
             font-size: 59%;
+        }
+
+        @media ${device.tablet} {
+            font-size: 54%;
         }
 
         @media ${device.mobile} {

@@ -29,7 +29,7 @@ const FourthSection = ({ theme }) => (
       incididunt ut labore et dolore magna aliqua.
     </SectionText>
 
-    <img src={mockups.laptopMobile[theme]} alt="Notes and Tasks page" />
+    <img src={mockups.fourthSection[theme]} alt="Notes and Tasks page" />
   </FourthSectionContainer>
 )
 

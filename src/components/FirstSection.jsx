@@ -3,6 +3,7 @@ import CTA from './CTA'
 import SectionTitle from './SectionTitle'
 import SectionText from './SectionText'
 import { mockups } from '../utils/mockups'
+import { device } from '../styles/theme'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -27,6 +28,12 @@ const FirstSectionContainer = styled.section`
       margin-top: ${({ theme }) => theme.spacingM};
     }
   }
+
+  img {
+    @media ${device.laptopXS} {
+      width: 60rem;
+    }
+  }
 `
 
 const FirstSection = ({ theme }) => (
@@ -41,7 +48,7 @@ const FirstSection = ({ theme }) => (
       </SectionText>
       <CTA text={'Open App'} />
     </div>
-    <img src={mockups.homeAndHabits[theme]} alt="Home and habits page" />
+    <img src={mockups.firstSection[theme]} alt="Home and habits page" />
   </FirstSectionContainer>
 )
 

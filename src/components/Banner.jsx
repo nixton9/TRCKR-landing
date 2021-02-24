@@ -1,6 +1,7 @@
 import React from 'react'
 import CTA from './CTA'
 import { mockups } from '../utils/mockups'
+import { device } from '../styles/theme'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -52,6 +53,20 @@ const BannerContainer = styled.div`
       left: 20%;
     }
   }
+
+  @media ${device.laptopXS} {
+    min-height: 50rem;
+    grid-template-columns: 3fr 2fr;
+
+    .content {
+      padding-left: ${({ theme }) => theme.spacingS};
+    }
+
+    .mockup img {
+      width: 27rem;
+      left: 15%;
+    }
+  }
 `
 
 const Banner = ({ theme }) => (
@@ -70,7 +85,7 @@ const Banner = ({ theme }) => (
       </div>
     </div>
     <div className="mockup">
-      <img src={mockups.signup[theme]} alt="Signup page" />
+      <img src={mockups.banner[theme]} alt="Signup page" />
     </div>
   </BannerContainer>
 )
