@@ -10,8 +10,15 @@ const CTAWrapper = styled.a`
   border-radius: ${({ theme }) => theme.borderRadius};
   text-transform: uppercase;
   padding: ${({ theme }) => theme.spacingXS} ${({ theme }) => theme.spacingS};
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.09rem;
   box-shadow: 0 10px 26px rgb(125, 65, 255, 0.46);
+  transition: all 0.25s linear;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 15px 35px rgb(125, 65, 255, 0.66);
+    filter: hue-rotate(5deg);
+  }
 
   &.inverse {
     background-color: ${({ theme }) => theme.alwaysWhite};
@@ -22,6 +29,12 @@ const CTAWrapper = styled.a`
   &.ghost {
     background-color: transparent;
     box-shadow: none;
+    border: 4px solid transparent;
+
+    &:hover,
+    &:active {
+      background: #5c2ac7;
+    }
   }
 
   &.ghost-white {
@@ -29,6 +42,12 @@ const CTAWrapper = styled.a`
     border: 4px solid ${({ theme }) => theme.white};
     padding: 1.2rem 3rem;
     box-shadow: none;
+
+    &:hover,
+    &:active {
+      color: ${({ theme }) => theme.backgroundBlack};
+      background-color: ${({ theme }) => theme.white};
+    }
   }
 `
 const CTA = ({ text, className }) => (
