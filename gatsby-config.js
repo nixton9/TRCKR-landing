@@ -15,6 +15,18 @@ module.exports = {
           include: /svg/
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#1F2128`,
+        theme_color: `#7D41FF`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`
+      }
     }
   ]
 }

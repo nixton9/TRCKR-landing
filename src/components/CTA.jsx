@@ -11,19 +11,24 @@ const CTAWrapper = styled.a`
   text-transform: uppercase;
   padding: ${({ theme }) => theme.spacingXS} ${({ theme }) => theme.spacingS};
   letter-spacing: 0.03rem;
+  box-shadow: 0 10px 26px rgb(125, 65, 255, 0.46);
 
   &.inverse {
     background-color: ${({ theme }) => theme.alwaysWhite};
     color: ${({ theme }) => theme.accent};
+    box-shadow: none;
   }
 
   &.ghost {
     background-color: transparent;
+    box-shadow: none;
   }
 
   &.ghost-white {
     color: ${({ theme }) => theme.white};
     border: 4px solid ${({ theme }) => theme.white};
+    padding: 1.2rem 3rem;
+    box-shadow: none;
   }
 `
 const CTA = ({ text, className }) => (

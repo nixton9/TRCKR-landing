@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 const BannerContainer = styled.div`
   width: 90%;
   min-height: 60rem;
-  margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
+  margin: ${({ theme }) => theme.spacingXXXL} auto 0 auto;
   background-color: ${({ theme }) => theme.accent};
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,9 +47,9 @@ const BannerContainer = styled.div`
     position: relative;
 
     img {
-      width: 30rem;
+      width: 40rem;
       position: absolute;
-      bottom: -9rem;
+      bottom: -13rem;
       left: 20%;
     }
   }
@@ -63,8 +63,66 @@ const BannerContainer = styled.div`
     }
 
     .mockup img {
-      width: 27rem;
-      left: 15%;
+      width: 35rem;
+      left: 5%;
+    }
+  }
+
+  @media ${device.tablet} {
+    min-height: 82rem;
+    max-width: 60rem;
+    grid-template-columns: 1fr;
+
+    .content {
+      align-items: flex-start;
+      padding-top: ${({ theme }) => theme.spacingL};
+      padding-left: 0;
+      flex-direction: unset;
+
+      .wrapper h3 {
+        font-size: 4rem;
+        line-height: 6.4rem;
+      }
+
+      .wrapper .buttons {
+        margin-top: ${({ theme }) => theme.spacingM};
+        text-align: center;
+      }
+    }
+
+    .mockup img {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  @media ${device.mobileL} {
+    max-width: unset;
+    width: 100%;
+
+    .content {
+      padding-left: ${({ theme }) => theme.spacingS};
+      padding-right: ${({ theme }) => theme.spacingS};
+
+      .wrapper h3 {
+        font-size: 3.8rem;
+        line-height: 5.9rem;
+      }
+    }
+  }
+
+  @media ${device.mobile} {
+    .content {
+      .wrapper h3 {
+        font-size: 3.4rem;
+        line-height: 5.4rem;
+      }
+
+      .wrapper .buttons .cta:nth-child(2) {
+        display: block;
+        margin: ${({ theme }) => theme.spacingS}; 0 0 0;
+      }
     }
   }
 `

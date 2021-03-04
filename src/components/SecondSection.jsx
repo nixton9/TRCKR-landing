@@ -5,17 +5,23 @@ import styled from 'styled-components'
 
 const SecondSectionContainer = styled.section`
   width: 90%;
-  margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
+  margin: ${({ theme }) => theme.spacingXXXL} auto 0 auto;
 
   .sectionTitle,
   .sectionText {
     text-align: center;
   }
+
+  .sectionText {
+    line-height: 5.5rem;
+  }
 `
 
 const SecondSection = () => (
   <SecondSectionContainer>
-    <SectionTitle>What is it</SectionTitle>
+    <SectionTitle>
+      The ultimate <span className="accent-color">tracking</span> tool
+    </SectionTitle>
     <SectionText limitWidth>
       TRCKR is the ultimate app for you to track everything in your life. Lorem
       ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

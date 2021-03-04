@@ -4,14 +4,15 @@ import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
 import FourthSection from '../components/FourthSection'
-import FifthSection from '../components/FifthSection'
+import Footer from '../components/Footer'
 import Banner from '../components/Banner'
+import { useLocalStorage } from '../utils/useLocalStorage'
 import { darkTheme, lightTheme } from '../styles/theme'
 import { GlobalStyle } from '../styles/globalStyles'
 import { ThemeProvider } from 'styled-components'
 
 const IndexPage = () => {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useLocalStorage('theme', 'dark')
 
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
@@ -24,7 +25,7 @@ const IndexPage = () => {
         <ThirdSection theme={theme} />
         <FourthSection theme={theme} />
       </main>
-      <FifthSection />
+      <Footer />
     </ThemeProvider>
   )
 }

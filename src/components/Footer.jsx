@@ -1,8 +1,9 @@
 import React from 'react'
 import CTA from './CTA'
+import { device } from '../styles/theme'
 import styled from 'styled-components'
 
-const FifthSectionContainer = styled.section`
+const FooterContainer = styled.section`
   position: relative;
   width: 100%;
   min-height: 55rem;
@@ -10,7 +11,20 @@ const FifthSectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.black};
-  margin-top: ${({ theme }) => theme.spacingXL};
+  margin-top: 30rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    top: -20rem;
+    background: linear-gradient(
+      to top,
+      ${({ theme }) => theme.black},
+      rgba(0, 0, 0, 0)
+    );
+  }
 
   h3 {
     color: ${({ theme }) => theme.white};
@@ -36,10 +50,22 @@ const FifthSectionContainer = styled.section`
     font-size: 1.3rem;
     text-align: center;
   }
+
+  @media ${device.tablet} {
+    flex-direction: column;
+
+    h3 {
+      margin-right: 0;
+    }
+
+    .buttons {
+      margin-top: ${({ theme }) => theme.spacingL};
+    }
+  }
 `
 
-const FifthSection = () => (
-  <FifthSectionContainer>
+const Footer = () => (
+  <FooterContainer>
     <h3>
       Start getting things <br />
       <span className="accent-color">done</span> today. Try it!
@@ -49,7 +75,7 @@ const FifthSection = () => (
       <CTA text="Web App" className="ghost ghost-white" />
     </div>
     <p className="footer">Eduardo Araújo @copyright alta cena | 2021 | TRCKR</p>
-  </FifthSectionContainer>
+  </FooterContainer>
 )
 
-export default FifthSection
+export default Footer

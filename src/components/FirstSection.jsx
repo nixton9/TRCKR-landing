@@ -12,13 +12,11 @@ const FirstSectionContainer = styled.section`
   margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
   max-width: 130rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: ${({ theme }) => theme.spacingM};
+  grid-template-columns: 2fr 3fr;
+  grid-gap: ${({ theme }) => theme.spacingXL};
   align-items: center;
 
   .text {
-    transform: translateY(-8rem);
-
     .sectionText {
       margin-top: ${({ theme }) => theme.spacingS};
     }
@@ -29,9 +27,54 @@ const FirstSectionContainer = styled.section`
     }
   }
 
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .cta {
+    font-size: 2rem;
+    padding: 2rem 4rem;
+  }
+
   img {
+    max-width: 100%;
+
     @media ${device.laptopXS} {
       width: 60rem;
+    }
+  }
+
+  @media ${device.tabletXL} {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+  }
+
+  @media ${device.tablet} {
+    margin: 24rem auto 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 9rem;
+
+    img {
+      margin: 0 auto;
+    }
+
+    .text {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .text .desktop-only {
+      display: none;
+    }
+
+    .mobile-only {
+      display: block;
+      text-align: center;
+      margin-top: ${({ theme }) => theme.spacingM};
     }
   }
 `
@@ -40,15 +83,18 @@ const FirstSection = ({ theme }) => (
   <FirstSectionContainer>
     <div className="text">
       <SectionTitle>
-        Organization <br />
+        Organization <br className="desktop-only" />
         made <span className="accent-color">easy</span>.
       </SectionTitle>
       <SectionText>
         Keeping track of everything doesn't have to be hard. Find out how.
       </SectionText>
-      <CTA text={'Open App'} />
+      <CTA text={'Go to App'} className="desktop-only" />
     </div>
     <img src={mockups.firstSection[theme]} alt="Home and habits page" />
+    <div className="mobile-only">
+      <CTA text={'Go to App'} />
+    </div>
   </FirstSectionContainer>
 )
 

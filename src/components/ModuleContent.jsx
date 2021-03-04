@@ -5,6 +5,7 @@ import NotesIcon from '../images/svg/notes.svg'
 import TasksIcon from '../images/svg/tasks.svg'
 import HabitsIcon from '../images/svg/habits.svg'
 import ExpensesIcon from '../images/svg/expenses.svg'
+import { device } from '../styles/theme'
 
 const ModuleWrapper = styled.div`
   .header {
@@ -72,6 +73,10 @@ const ModuleWrapper = styled.div`
     line-height: 3.2rem;
     font-weight: ${({ theme }) => theme.fontLight};
     margin-top: ${({ theme }) => theme.spacingS};
+  }
+
+  @media ${device.mobileL} {
+    margin: 0 auto;
   }
 `
 

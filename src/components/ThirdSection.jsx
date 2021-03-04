@@ -21,7 +21,12 @@ const ThirdSectionContainer = styled.section`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 12rem;
+    max-width: 185rem;
     padding: 0 30rem 0 9rem;
+
+    @media ${device.laptop} {
+      grid-gap: 9rem 12rem;
+    }
 
     @media ${device.laptopXS} {
       padding: 0 18rem 0 9rem;
@@ -30,17 +35,36 @@ const ThirdSectionContainer = styled.section`
 
   img {
     position: absolute;
-    right: -22vw;
-    bottom: -40rem;
+    right: -13vw;
+    bottom: -25rem;
+    width: 40rem;
 
     @media ${device.laptop} {
-      width: 60rem;
-      bottom: -30rem;
+      width: 30rem;
+      bottom: -26rem;
     }
 
     @media ${device.laptopXS} {
-      width: 50rem;
-      bottom: -25rem;
+      right: -17vw;
+    }
+  }
+
+  @media ${device.tablet} {
+    .modules-grid {
+      padding: 0;
+      width: 90%;
+      margin: ${({ theme }) => theme.spacingXL} auto 0 auto;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  @media ${device.mobileL} {
+    .modules-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 9rem;
     }
   }
 `

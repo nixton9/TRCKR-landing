@@ -23,20 +23,28 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 59%;
         }
 
+        @media ${device.tabletXL} {
+            font-size: 56%;
+        }
+
         @media ${device.tablet} {
             font-size: 54%;
         }
 
+        @media ${device.tabletXS} {
+            font-size: 52%;
+        }
+
+        @media ${device.mobileL} {
+            font-size: 48%;
+        }
+
         @media ${device.mobile} {
-            font-size: 50%;
+            font-size: 6.5px;
         }
 
         @media ${device.mobileS} {
-            font-size: 7.5px;
-        }
-
-        @media ${device.mobileXS} {
-            font-size: 6.5px;
+            font-size: 6px;
         }
     }
 
