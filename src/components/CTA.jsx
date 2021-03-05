@@ -54,6 +54,7 @@ const CTA = ({ text, className }) => (
   <CTAWrapper
     href="https://trckrapp.com"
     target="_blank"
+    rel="noopener noreferrer"
     className={className ? `${className} cta` : 'cta'}
   >
     {text}
