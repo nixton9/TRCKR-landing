@@ -1,4 +1,5 @@
 import React from 'react'
+import { device } from '../styles/theme'
 import styled from 'styled-components/macro'
 
 const ToggleContainer = styled.div`
@@ -47,6 +48,18 @@ const Slider = styled.span`
 
     &:before {
       transform: translateX(3rem);
+    }
+  }
+
+  @media ${device.mobile} {
+    &:before {
+      bottom: 4px;
+    }
+  }
+
+  @media ${device.mobileS} {
+    &:before {
+      bottom: 3px;
     }
   }
 `

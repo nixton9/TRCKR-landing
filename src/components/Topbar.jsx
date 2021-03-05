@@ -2,6 +2,7 @@ import React from 'react'
 import CTA from './CTA'
 import { Logo } from './Logo'
 import { ToggleButton } from './ToggleButton'
+import { device } from '../styles/theme'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
@@ -25,6 +26,12 @@ export const TopbarContainer = styled.nav`
 
     .toggle-button {
       margin-right: ${({ theme }) => theme.spacingM};
+    }
+  }
+
+  @media ${device.mobileS} {
+    .buttons .toggle-button {
+      margin-right: ${({ theme }) => theme.spacingS};
     }
   }
 `
