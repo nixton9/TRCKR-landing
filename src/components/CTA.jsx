@@ -53,6 +53,7 @@ const CTAWrapper = styled.a`
 const CTA = ({ text, className }) => (
   <CTAWrapper
     href="https://trckrapp.com"
+    target="_blank"
     className={className ? `${className} cta` : 'cta'}
   >
     {text}

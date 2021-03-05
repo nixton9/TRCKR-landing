@@ -132,7 +132,7 @@ const Banner = ({ theme }) => (
     <div className="content">
       <div className="wrapper">
         <h3>
-          Tracking made easy.
+          Effortless tracking.
           <br />
           Sign up now.
         </h3>

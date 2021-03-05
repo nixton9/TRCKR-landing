@@ -58,13 +58,14 @@ const FourthSection = ({ theme }) => (
 
     <div className="text">
       <SectionTitle>
-        Track it how <span className="accent-color">you</span> want to
+        A website that <span className="accent-color">feels</span> like an app
       </SectionTitle>
 
       <SectionText>
-        TRCKR is the ultimate app for you to track everything in your life.
-        Lorem ipsum dolor sit amet, consectetur adipiscing. And it's also really
-        cool since you can do this and that and that and this.
+        TRCKR is technically a website but it can be installed as an app on
+        smartphones. This way you'll be able to use TRCKR on any device - a
+        smartphone, tablet, laptop, desktop - with any OS - Android, iOS, etc -
+        and keep everything synced across all of your devices.
       </SectionText>
     </div>
   </FourthSectionContainer>

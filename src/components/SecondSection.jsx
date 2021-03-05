@@ -23,10 +23,12 @@ const SecondSection = () => (
       The ultimate <span className="accent-color">tracking</span> tool
     </SectionTitle>
     <SectionText limitWidth>
-      TRCKR is the ultimate app for you to track everything in your life. Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris nisi ut aliquip.
+      TRCKR helps you keep everything in place - your notes, tasks, expenses and
+      habits - all in one place! Organizing your stuff and following your
+      progress has never been easier, helping you to stay productive. TRCKR's
+      notifications will remind you of your tasks for each day and will make
+      sure you keep focused on following your habits. Scroll down to find out
+      more about the app.
     </SectionText>
   </SecondSectionContainer>
 )

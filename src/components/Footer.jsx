@@ -74,7 +74,7 @@ const Footer = () => (
       <CTA text="Google Play" />
       <CTA text="Web App" className="ghost ghost-white" />
     </div>
-    <p className="footer">Eduardo Araújo @copyright alta cena | 2021 | TRCKR</p>
+    <p className="footer">@TRCKR 2021</p>
   </FooterContainer>
 )
 

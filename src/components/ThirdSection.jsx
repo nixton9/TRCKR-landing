@@ -77,24 +77,27 @@ const ThirdSection = ({ theme }) => (
 
     <div className="modules-grid">
       <ModuleContent title={'Notes'}>
-        Notes are where you can do this and that and that and this sdks keep all
-        like a pro.
+        Capture all your ideas and take notes of everything you need. Organize
+        your notes using tags so you can easily filter and find them. Notes can
+        be fully customizable with different ways of formatting.
       </ModuleContent>
 
       <ModuleContent title={'Tasks'}>
-        Notes are where you can do this and that and that and this sdks keep all
-        like a pro and this one is kind of bigger.
+        Your ultimate todo list! Add tasks for anything that you want to get
+        done, give them a due date, organize them in appropriate inboxes and get
+        things done!
       </ModuleContent>
 
       <ModuleContent title={'Habits'}>
-        Notes are where you can do this and that and that and this sdks keep all
-        like a pro and this one will be even bigger than the other three texts
-        that we have here on this page.
+        Want to develop a new habit? Easy! Just add it in here, and everyday
+        mark that habit as done or not done for the day. TRCKR will then display
+        some statistics on all your habits so you can track your progress.
       </ModuleContent>
 
       <ModuleContent title={'Expenses'}>
-        Notes are where you can do this and that and that and this sdks keep all
-        like a pro.
+        Tracking your expenses as never been easier - just add any expenses on
+        the app and associate them with your own categories. After a while,
+        you’ll be able to see detailed statistics on your spendings.
       </ModuleContent>
     </div>
     <img src={mockups.thirdSection[theme]} alt="Habits Stats page" />
