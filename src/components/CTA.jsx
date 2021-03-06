@@ -40,7 +40,7 @@ const CTAWrapper = styled.a`
   &.ghost-white {
     color: ${({ theme }) => theme.white};
     border: 4px solid ${({ theme }) => theme.white};
-    padding: 1.2rem 3rem;
+    padding: 1rem 3rem;
     box-shadow: none;
 
     &:hover,
