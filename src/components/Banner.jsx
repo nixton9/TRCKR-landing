@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 const BannerContainer = styled.div`
   width: 90%;
   min-height: 60rem;
+  max-width: 175rem;
   margin: ${({ theme }) => theme.spacingXXXL} auto 0 auto;
   background-color: ${({ theme }) => theme.accent};
   display: grid;

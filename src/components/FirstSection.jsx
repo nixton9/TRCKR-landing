@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 const FirstSectionContainer = styled.section`
   width: 90%;
   margin: ${({ theme }) => theme.spacingXXL} auto 0 auto;
-  max-width: 130rem;
+  max-width: 150rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: ${({ theme }) => theme.spacingXL};

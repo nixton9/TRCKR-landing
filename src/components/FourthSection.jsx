@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 
 const FourthSectionContainer = styled.section`
   width: 90%;
+  max-width: 150rem;
   margin: 39rem auto 0 auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -15,7 +16,7 @@ const FourthSectionContainer = styled.section`
 
   .text {
     align-self: center;
-    max-width: 65rem;
+    max-width: 80rem;
 
     h3 {
       font-size: 4.5rem;

@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 
 const ThirdSectionContainer = styled.section`
   width: 90%;
+  max-width: 150rem;
   position: relative;
   margin: ${({ theme }) => theme.spacingXXXL} auto 0 auto;
 

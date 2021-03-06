@@ -9,6 +9,7 @@ import PropTypes from 'prop-types'
 export const TopbarContainer = styled.nav`
   position: fixed;
   width: 100%;
+  max-width: 200rem;
   top: 0;
   left: 0;
   right: 0;

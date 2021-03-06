@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const FooterContainer = styled.section`
   position: relative;
   width: 100%;
-  min-height: 55rem;
+  min-height: 75rem;
   display: flex;
   align-items: center;
   justify-content: center;
