@@ -9,30 +9,33 @@ import PropTypes from 'prop-types'
 export const TopbarContainer = styled.nav`
   position: fixed;
   width: 100%;
-  max-width: 200rem;
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  padding: ${({ theme }) => theme.spacingS};
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: ${({ theme }) => theme.backgroundBlack};
   z-index: 11;
 
-  .buttons {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 200rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: ${({ theme }) => theme.spacingS};
 
-    .toggle-button {
-      margin-right: ${({ theme }) => theme.spacingM};
+    .buttons {
+      display: flex;
+      align-items: center;
+
+      .toggle-button {
+        margin-right: ${({ theme }) => theme.spacingM};
+      }
     }
-  }
 
-  @media ${device.mobileS} {
-    .buttons .toggle-button {
-      margin-right: ${({ theme }) => theme.spacingS};
+    @media ${device.mobileS} {
+      .buttons .toggle-button {
+        margin-right: ${({ theme }) => theme.spacingS};
+      }
     }
   }
 `
@@ -42,10 +45,15 @@ const Topbar = ({ theme, setTheme }) => {
 
   return (
     <TopbarContainer>
-      <Logo />
-      <div className="buttons">
-        <ToggleButton isChecked={theme === 'dark'} setIsChecked={handleCheck} />
-        <CTA text={'Try it now'} />
+      <div className="wrapper">
+        <Logo />
+        <div className="buttons">
+          <ToggleButton
+            isChecked={theme === 'dark'}
+            setIsChecked={handleCheck}
+          />
+          <CTA text={'Try it now'} />
+        </div>
       </div>
     </TopbarContainer>
   )
