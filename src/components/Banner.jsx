@@ -138,7 +138,7 @@ const Banner = ({ theme }) => (
           Sign up now.
         </h3>
         <div className="buttons">
-          <CTA text={'Download the app'} className={'inverse'} />
+          <CTA text={'Download the app'} className={'inverse'} isPlayStore />
           <CTA text={'Visit web app'} className={'ghost'} />
         </div>
       </div>

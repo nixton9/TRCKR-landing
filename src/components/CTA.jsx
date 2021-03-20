@@ -50,9 +50,13 @@ const CTAWrapper = styled.a`
     }
   }
 `
-const CTA = ({ text, className }) => (
+const CTA = ({ text, className, isPlayStore }) => (
   <CTAWrapper
-    href="https://trckrapp.com"
+    href={
+      isPlayStore
+        ? 'https://play.google.com/store/apps/details?id=com.trckrapp.twa'
+        : 'https://trckrapp.com'
+    }
     target="_blank"
     rel="noopener noreferrer"
     className={className ? `${className} cta` : 'cta'}
@@ -63,7 +67,8 @@ const CTA = ({ text, className }) => (
 
 CTA.propTypes = {
   text: PropTypes.string.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  isPlayStore: PropTypes.bool
 }
 
 export default CTA

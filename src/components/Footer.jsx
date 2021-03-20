@@ -71,7 +71,7 @@ const Footer = () => (
       <span className="accent-color">done</span> today. Try it!
     </h3>
     <div className="buttons">
-      <CTA text="Google Play" />
+      <CTA text="Google Play" isPlayStore />
       <CTA text="Web App" className="ghost ghost-white" />
     </div>
     <p className="footer">@TRCKR 2021</p>
